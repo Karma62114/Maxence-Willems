@@ -26,8 +26,8 @@ opacity: 0px;
 }
 .menu :hover {
     text-decoration: overline;
-    text-decoration-color: #0065FC;
-    color: #0065FC;
+    text-decoration-color: var(--main-color);
+    color: var(--main-color);
 }
 
 .fa-solid {
@@ -65,28 +65,39 @@ color: rgba(0, 0, 0, 1);
 }
 
 #recherche{
-border: 1px solid rgba(242, 242, 242, 1)
-
+border: 1px solid rgba(242, 242, 242, 1);
+font-family: Raleway;
+font-size: 18px;
+font-weight: 700;
+padding: 10px;
 }
-.bar_recherche .boutton_recherche{
+
+.bar_recherche .bouton_recherche{
 font-family: Raleway;
 font-size: 18px;
 font-weight: 700;
 line-height: 21px;
 text-align: center;
 color: rgba(255, 255, 255, 1);
-width: 132px;
-height: 49px;
 padding: 15px 16px 15px 16px;
 gap: 10px;
 border-radius: 0px 15px 15px 0px;
 border: 1px 0px 0px 0px;
 opacity: 0px;
 background: rgba(0, 101, 252, 1);
-border: 1px solid rgba(0, 101, 252, 1)
+border: 1px solid rgba(0, 101, 252, 1);
+cursor: pointer;
+transition: background-color 300ms, color 300ms;
 }
 
-.Filtres{
+.bouton_recherche:hover{
+background: #DEEBFF;
+opacity: 1;
+color: #0065FC;
+
+}
+
+.filtres{
 display: flex;
 margin: 30px 0px;
 }
@@ -97,23 +108,62 @@ font-size: 17px;
 font-weight: 700;
 line-height: 21px;
 text-align: center;
-width: 173px;
-height: 50px;
-padding: 4px 19px 4px 19px;
+padding: 2px 19px 2px 19px;
 gap: 10px;
-border-radius: 25px 25px 25px 25px;
+border-radius: 30px 30px 30px 30px;
 border: 2px 0px 0px 0px;
 opacity: 0px;
 border: 2px solid rgba(217, 217, 217, 1);
 background: white;
+margin-left: 20px;
+}
+
+.filtres :hover{
+background: #DEEBFF;
+}
+
+.filtres h3:hover {
+background: white;
+}
+
+.info p{
+display:flex;
+align-items: center;
 
 }
 
+.info p i {
+width: 24px;
+height: 24px;
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+border: 2px solid rgba(217, 217, 217, 1);
+border-radius: 20px 20px 20px 20px;
+margin-right: 10px;
+background: white;
+}
 
+.fa-info{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 10px;
+width: 4px;
+height: 10px;
+top: 7px;
+left: 10px;
+gap: 0px;
+}
 
+.hebergements{
+font-family: Raleway;
+font-size: 22px;
+font-weight: 700;
+line-height: 25.83px;
+text-align: left;
 
-
-
+}
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -127,15 +177,16 @@ a {
 }
 
 .section-title {
-    margin: 0;
-    font-size: 22px;
+margin: 15px;
+font-size: 22px;
 }
 
 .card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+background-color: white;
+border-radius: 20px;
+padding: 5px;
+filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
 }
 
 .card img {
@@ -154,6 +205,15 @@ a {
     color: var(--main-bg-color)
 }
 
+.card-subtitle{
+font-family: Raleway;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.44px;
+text-align: left;
+
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -163,13 +223,60 @@ a {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding: 10px 30px 30px 30px ;
     box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+width: 65%;
+}
+
+.hebergements_cards1{
+display: flex;
+}
+
+.hebergements_cards2{
+    display: flex;
+}
+.hebergements_cards .card{
+margin: 3px 15px 0px 0px;
+}
+
+.hebergements_cards img{
+width: 250px;
+height: 132px;
+gap: 0px;
+border-radius: 15px 15px 0px 0px;
+border: 5px 0px 0px 0px;
+opacity: 0px;
+}
+
+.hebergements_cards .card-content{
+width: fill ; 
+height: fill ;
+padding: 0px 15px 0px 15px;
+gap: 8px;
+opacity: 0px;
+}
+
+.afficher_plus{
+font-family: Raleway;
+font-size: 18px;
+font-weight: 700;
+line-height: 21.13px;
+text-align: left;
+border: #DEEBFF;
+margin-top: 30px;
+}
+
+.afficher_plus i{
+    color: black;
+    font-size: 15px;
+}
+
+.afficher_plus:hover{
+    text-decoration: underline;
 }
 
 /****** Populaires ***********/
@@ -217,6 +324,34 @@ a {
     margin-bottom: 5px;
 }
 
+/********Activités*******/
+.activités{
+    padding: 20px;
+}
+.activités_cards{
+    padding: 20px;
+    display: flex;
+    gap: 0px;
+    justify-content: space-around;
+}
+
+.activités_cards .card{
+    padding: 0px;
+}
+
+.activités_cards .card-title{
+    margin-top: 10px;
+    margin-bottom: 4px;
+    padding: 0px 0px 20px 20px;
+}
+.activités img{
+    width: 297.5px;
+    height: 380px;
+    gap: 0px;
+    border-radius: 20px 20px 0px 0px;
+    opacity: 0px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
 
 
 
