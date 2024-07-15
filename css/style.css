@@ -20,7 +20,15 @@ height: 19px;
 gap: 0px;
 opacity: 0px;
 }
+.menu a {
+    padding: 20px;
 
+}
+.menu :hover {
+    text-decoration: overline;
+    text-decoration-color: #0065FC;
+    color: #0065FC;
+}
 
 .fa-solid {
     color: var(--main-color);
@@ -30,6 +38,81 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.bar_recherche{
+display: flex;
+margin: 30px 0px;
+}
+
+.bouton_localisation {
+display: flex;
+align-items: center;
+padding: 10px 20px;
+border: 1px solid rgba(242, 242, 242, 1);
+border: 1px 0px 0px 0px ;
+border-radius: 15px 0px 0px 15px;
+}
+
+.fa-location-dot{
+font-size: 18px;
+width: 14px;
+height: 18px;
+top: 15px;
+left: 18px;
+gap: 0px;
+opacity: 0px;
+color: rgba(0, 0, 0, 1);
+}
+
+#recherche{
+border: 1px solid rgba(242, 242, 242, 1)
+
+}
+.bar_recherche .boutton_recherche{
+font-family: Raleway;
+font-size: 18px;
+font-weight: 700;
+line-height: 21px;
+text-align: center;
+color: rgba(255, 255, 255, 1);
+width: 132px;
+height: 49px;
+padding: 15px 16px 15px 16px;
+gap: 10px;
+border-radius: 0px 15px 15px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+background: rgba(0, 101, 252, 1);
+border: 1px solid rgba(0, 101, 252, 1)
+}
+
+.Filtres{
+display: flex;
+margin: 30px 0px;
+}
+
+.bouton_filtres{
+font-family: Raleway;
+font-size: 17px;
+font-weight: 700;
+line-height: 21px;
+text-align: center;
+width: 173px;
+height: 50px;
+padding: 4px 19px 4px 19px;
+gap: 10px;
+border-radius: 25px 25px 25px 25px;
+border: 2px 0px 0px 0px;
+opacity: 0px;
+border: 2px solid rgba(217, 217, 217, 1);
+background: white;
+
+}
+
+
+
+
+
 
 .main-container {
     width: 100%;
