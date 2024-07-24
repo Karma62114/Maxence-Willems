@@ -15,10 +15,15 @@ header {
 
 }
 
+
 .logo_header {
     width: 61.09px;
     height: 19px;
 }
+
+.menu a {
+    padding: 20px;
+
 
 .menu a {
     padding-top: 20px;
@@ -96,7 +101,6 @@ body {
     background:var(--filter-bg-color);
     opacity: 1;
     color: var(--main-color);
-
 }
 
 .filtres{
@@ -163,6 +167,7 @@ body {
     line-height: 25.83px;
     text-align: left;
 
+
 }
 .main-container {
     width: 100%;
@@ -186,6 +191,7 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
 
 }
 
@@ -211,7 +217,6 @@ a {
     font-weight: 400;
     line-height: 15px;
     text-align: left;
-
 }
 
 /****** Hebergements And Populaires ***********/
@@ -232,7 +237,6 @@ a {
     width: 65%;
     height: 100%;
     background-color: var(--main-bg-color);
-
 }
 
 .hebergements_cards{
@@ -242,14 +246,12 @@ a {
     align-items: center;
     flex-wrap: wrap;
     object-fit: cover;
-
 }
 
 .hebergements_cards .card{
     width: 230px;
     height:207px;
     margin-bottom: 30px ;
-
 }
 
 .hebergements_cards img{
@@ -464,7 +466,7 @@ li{
 .bas_de_page{
     gap: 120px;
 }
-}
+  }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
@@ -623,4 +625,5 @@ footer{
     margin: 20px;
 }
 }
+
 
