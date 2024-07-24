@@ -15,16 +15,18 @@ header {
 
 }
 
-
 .logo_header {
     width: 61.09px;
     height: 19px;
 }
 
-.menu a {
-    padding: 20px;
+.headline h3{
+font-size: 26px;
+}
 
-
+.headline p{
+    font-size: 16px;
+}
 .menu a {
     padding-top: 20px;
     margin: 20px;
@@ -101,6 +103,7 @@ body {
     background:var(--filter-bg-color);
     opacity: 1;
     color: var(--main-color);
+
 }
 
 .filtres{
@@ -118,7 +121,7 @@ body {
     gap: 10px;
     border-radius: 30px 30px 30px 30px;
     border: 2px;
-    border: 2px solid var(--main-bg-color);
+    border: 3px solid var(--main-bg-color);
     background: white;
     margin-left: 20px;
 }
@@ -167,7 +170,6 @@ body {
     line-height: 25.83px;
     text-align: left;
 
-
 }
 .main-container {
     width: 100%;
@@ -191,7 +193,6 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-
 
 }
 
@@ -217,6 +218,7 @@ a {
     font-weight: 400;
     line-height: 15px;
     text-align: left;
+
 }
 
 /****** Hebergements And Populaires ***********/
@@ -237,6 +239,7 @@ a {
     width: 65%;
     height: 100%;
     background-color: var(--main-bg-color);
+
 }
 
 .hebergements_cards{
@@ -246,12 +249,14 @@ a {
     align-items: center;
     flex-wrap: wrap;
     object-fit: cover;
+
 }
 
 .hebergements_cards .card{
-    width: 230px;
+    width: 240px;
     height:207px;
-    margin-bottom: 30px ;
+    margin: 0px 0px 30px 10px;
+
 }
 
 .hebergements_cards img{
@@ -344,11 +349,15 @@ a {
 .activités{
     padding: 20px;
 }
+
+.activités h3{
+    margin-top: 50px;
+}
 .activités_cards{
-    padding: 20px;
+    padding-top: 40px;
     display: flex;
     gap: 0px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .activités_cards .card{
@@ -466,7 +475,7 @@ li{
 .bas_de_page{
     gap: 120px;
 }
-  }
+}
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
@@ -491,7 +500,19 @@ main h3{
     width: 80%;
     padding: 20px;
 }
+.headline h3{
+    font-size: 22px;
+    margin: 10px 0px 0px 0px;
+}
 
+.headline p{
+    margin-bottom: 30px;
+}
+
+.info{
+    padding: 0px 0px 0px 20px;
+    margin: 0px;
+}
 .populaires{
     width: 100%;
     margin-top: 0px;
@@ -500,6 +521,10 @@ main h3{
 .activités{
     width: auto;
     padding: 20px;
+}
+
+.activités h3{
+    margin: 0px;
 }
 header{
     width: 100%;
@@ -540,12 +565,16 @@ header{
     display: block;
     width: 100%;
     padding: 0px 20px 0px 20px;
+    margin: 0px;
 }
 
+.filtres h3{
+    margin-bottom: 10px;
+}
 .bouton_filtres{
     width: 40%;
     padding: 10px;
-    margin: 10px;
+    margin: 5px 5px 10px 5px;
     font-size: 14px;
 }
 
@@ -625,5 +654,4 @@ footer{
     margin: 20px;
 }
 }
-
 
